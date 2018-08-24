@@ -1,6 +1,8 @@
 import React from 'react';
-import Card from './components/Cards/Card';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
+
+import Deck from './components/Deck';
+
 import './index.scss';
 
 class Scroom extends React.Component {
@@ -9,18 +11,18 @@ class Scroom extends React.Component {
 
     this.state = {
       cards: [
-        { value: '1', preselected: false },
-        { value: '2', preselected: false },
-        { value: '3', preselected: false },
-        { value: '5', preselected: false },
-        { value: '8', preselected: false },
-        { value: '13', preselected: false },
-        { value: '20', preselected: false },
-        { value: '40', preselected: false },
-        { value: '100', preselected: false },
-        { value: '?', preselected: false },
-        { value: 'infinity', preselected: false },
-        { value: 'coffee', preselected: false }
+        { value: '1', preselected: null },
+        { value: '2', preselected: null },
+        { value: '3', preselected: null },
+        { value: '5', preselected: null },
+        { value: '8', preselected: null },
+        { value: '13', preselected: null },
+        { value: '20', preselected: null },
+        { value: '40', preselected: null },
+        { value: '100', preselected: null },
+        { value: '?', preselected: null },
+        { value: 'infinity', preselected: null },
+        { value: 'coffee', preselected: null }
       ],
       loons: [
         {
@@ -36,7 +38,9 @@ class Scroom extends React.Component {
 
   handleCardClick(value) {
     let newState = Object.assign({}, this.state);
+
     newState.loons[0].pick = value;
+
     newState.cards.forEach(function(card) {
       if (card.value === value) {
         card.preselected = true;
@@ -52,13 +56,7 @@ class Scroom extends React.Component {
     return (
       <Container>
         <Row>Pick: {this.state.loons[0].pick}</Row>
-        <Row>
-          {this.state.cards.map(card => (
-            <Col xs="6" sm="4" key={card.value}>
-              <Card card={card} onClick={() => this.handleCardClick(card.value)} />
-            </Col>
-          ))}
-        </Row>
+        <Deck cards={this.state.cards} onCardClick={value => this.handleCardClick(value)} />
       </Container>
     );
   }
