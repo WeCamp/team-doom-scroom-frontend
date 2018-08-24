@@ -1,0 +1,16 @@
+.cardpick{
+  height:120px;
+  width:80px;
+
+  background-color: #fff;
+  border-radius: 4px;
+
+  color:#000;
+  border: 2px solid orange;
+
+  margin-bottom:20px;
+  text-align: center;
+  vertical-align: center;
+  line-height: 120px;
+  background-clip: content-box; /* support: IE9+ */
+}

@@ -1,0 +1,7 @@
+$primary-color: #333;
+$secondary-color: #222;
+$main-text-color: #000;
+
+.scroom-app {
+  background: repeating-linear-gradient(-55deg, $secondary-color, $secondary-color 10px, $primary-color 10px, $primary-color 20px);
+}

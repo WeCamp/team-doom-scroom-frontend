@@ -21,7 +21,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <Navbar color="dark" dark expand="md">
+      <Navbar color="fixed" dark expand="md">
         <Container>
           <NavbarBrand href="/">Scroom</NavbarBrand>
           <NavbarToggler onClick={() => this.toggle()} />

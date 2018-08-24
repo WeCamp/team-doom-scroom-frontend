@@ -5,6 +5,9 @@ import Navigation from './Navigation';
 import Scroom from '../Scroom';
 import Footer from './Footer';
 
+import './index.scss';
+import './config.scss';
+
 class App extends React.Component {
   render() {
     return (
