@@ -23,23 +23,13 @@ class Navigation extends React.Component {
     return (
       <Navbar color="dark" dark expand="md">
         <Container>
-          <NavbarBrand href="/">Elewant</NavbarBrand>
+          <NavbarBrand href="/">Scroom</NavbarBrand>
           <NavbarToggler onClick={() => this.toggle()} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink to="/experiment" className="nav-link">
-                  The Experiment
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/tictactoe" className="nav-link">
-                  Tic Tac Toe
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/todos" className="nav-link">
-                  Todo's
+                <NavLink to="/planning-poker" className="nav-link">
+                  Planning Poker
                 </NavLink>
               </NavItem>
             </Nav>

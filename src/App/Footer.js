@@ -9,8 +9,8 @@ const Footer = () => {
     <footer className="elewant-footer">
       <Container>
         Copyright &copy; <Moment format="YYYY" />{' '}
-        <a href="https://www.future500.nl" target="_blank" rel="noopener noreferrer">
-          Future500 B.V.
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          Scroom
         </a>
       </Container>
     </footer>
