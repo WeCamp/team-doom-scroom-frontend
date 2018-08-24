@@ -1,7 +1,7 @@
-@import 'node_modules/bootstrap/scss/_functions.scss';
-@import 'node_modules/bootstrap/scss/_variables.scss';
+@import 'src/variables.scss';
 
-$footer-bg: mix($gray-100, $gray-200, 50%);
+$footer-color: $gray-500;
+$footer-bg: $navbar-footer-bg;
 $footer-height: $nav-link-height + $navbar-padding-y * 2;
 
 html {
@@ -10,14 +10,16 @@ html {
 }
 
 body {
-  margin-bottom: $footer-height;
+  padding-bottom: $footer-height;
 }
 
-.elewant-footer {
+.scroom-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: $footer-height;
   line-height: $footer-height;
+  text-align: center;
+  color: $footer-color;
   background-color: $footer-bg;
 }

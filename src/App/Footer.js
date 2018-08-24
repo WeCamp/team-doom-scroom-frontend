@@ -6,12 +6,9 @@ import './Footer.scss';
 
 const Footer = () => {
   return (
-    <footer className="elewant-footer">
+    <footer className="scroom-footer">
       <Container>
-        Copyright &copy; <Moment format="YYYY" />{' '}
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          Scroom
-        </a>
+        Copyright &copy; <Moment format="YYYY" />{' '} &bull; Team Doom &bull; Daniëlle &bull; Glenn &bull; Jasper
       </Container>
     </footer>
   );
