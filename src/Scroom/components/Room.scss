@@ -1,0 +1,21 @@
+@import 'src/variables.scss';
+
+.room {
+  margin-top: 20px;
+}
+
+.loons {
+  background-color: $white;
+  color: $black;
+  min-height: 80px;
+  padding: 10px 20px;
+
+  @include media-breakpoint-up(sm) {
+    border-radius: 6px;
+    margin-bottom: 25px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: $font-size-lg;
+  }
+}

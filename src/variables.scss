@@ -1,11 +1,12 @@
 @import 'node_modules/bootstrap/scss/_functions.scss';
 @import 'node_modules/bootstrap/scss/_variables.scss';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss';
 
 // Custom
 
-$primary-color: #333;
-$secondary-color: #222;
-$main-text-color: red;
+$primary-color: $gray-800;
+$secondary-color: $gray-900;
+$main-text-color: $white;
 
 $navbar-footer-bg: rgba(0, 0, 0, 0.5);
 

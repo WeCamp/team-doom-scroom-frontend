@@ -26,7 +26,7 @@ class Navigation extends React.Component {
           <NavbarBrand href="/">Scroom</NavbarBrand>
           <NavbarToggler onClick={() => this.toggle()} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav navbar>
               <NavItem>
                 <NavLink to="/planning-poker" className="nav-link">
                   Planning Poker

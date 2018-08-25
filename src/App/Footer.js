@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="scroom-footer">
       <Container>
-        Team Doom &bull; <span className="people">Daniëlle &bull; Glenn &bull; Jasper</span>
+        Team Doom <span className="people">&bull; Daniëlle &bull; Glenn &bull; Jasper</span>
       </Container>
     </footer>
   );

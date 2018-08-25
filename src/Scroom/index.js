@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Row } from 'reactstrap';
+import { Container } from 'reactstrap';
 
-import Deck from './components/Deck';
+import Room from './components/Room';
 
 import './index.scss';
 
@@ -26,20 +26,28 @@ class Scroom extends React.Component {
       ],
       loons: [
         {
-          key: 'foo',
-          name: 'Foo',
-          email: '',
-          position: 0,
-          pick: null
+          id: '1',
+          pickedCard: null
+        },
+        {
+          id: '2',
+          pickedCard: null
         }
-      ]
+      ],
+      me: '1'
     };
+  }
+
+  findMe(me, loons) {
+    return loons.find(loon => {
+      return loon.id === me;
+    });
   }
 
   handleCardClick(value) {
     let newState = Object.assign({}, this.state);
 
-    newState.loons[0].pick = value;
+    this.findMe(newState.me, newState.loons).pickedCard = value;
 
     newState.cards.forEach(function(card) {
       if (card.value === value) {
@@ -55,8 +63,7 @@ class Scroom extends React.Component {
   render() {
     return (
       <Container>
-        <Row>Pick: {this.state.loons[0].pick}</Row>
-        <Deck cards={this.state.cards} onCardClick={value => this.handleCardClick(value)} />
+        <Room cards={this.state.cards} loons={this.state.loons} onCardClick={value => this.handleCardClick(value)} />
       </Container>
     );
   }
