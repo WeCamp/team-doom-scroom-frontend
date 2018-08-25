@@ -2,19 +2,17 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import Navigation from './Navigation';
-import Experiment from '../Experiment';
-import Game from '../TicTacToe';
-import Todos from '../Todos';
+import Scroom from '../Scroom';
 import Footer from './Footer';
+
+import './index.scss';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="elewant-app">
+      <div className="scroom-app">
         <Navigation />
-        <Route path="/experiment" component={Experiment} />
-        <Route path="/tictactoe" component={Game} />
-        <Route path="/todos" component={Todos} />
+        <Route path="/planning-poker" component={Scroom} />
         <Footer />
       </div>
     );

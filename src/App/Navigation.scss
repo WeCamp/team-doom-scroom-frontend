@@ -1,6 +1,7 @@
-@import 'node_modules/bootstrap/scss/_functions.scss';
-@import 'node_modules/bootstrap/scss/_variables.scss';
+@import 'src/variables.scss';
 
-.navbar {
-  margin-bottom: $spacer;
+.navbar.bg-dark {
+  background-color: $navbar-footer-bg !important;
 }
+
+// navbar-expand-md navbar-dark
