@@ -29,7 +29,7 @@ class Navigation extends React.Component {
             <Nav navbar>
               <NavItem>
                 <NavLink to="/planning-poker" className="nav-link">
-                  Planning Poker
+                  Ploonning Pooker
                 </NavLink>
               </NavItem>
             </Nav>

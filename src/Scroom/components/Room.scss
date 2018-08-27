@@ -7,15 +7,13 @@
 .loons {
   background-color: $white;
   color: $black;
+  font-family: $font-family-monospace;
+  font-size: 11px;
   min-height: 80px;
   padding: 10px 20px;
 
   @include media-breakpoint-up(sm) {
     border-radius: 6px;
     margin-bottom: 25px;
-  }
-
-  @include media-breakpoint-up(xl) {
-    font-size: $font-size-lg;
   }
 }

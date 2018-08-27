@@ -19,7 +19,7 @@ const Card = props => {
 
   if (props.card.value === '?') {
     return <UnknownCard card={props.card} onClick={props.onClick} selectedClass={selectedClass} />;
-  } else if (props.card.value === 'infinity') {
+  } else if (props.card.value === 'infinite') {
     return <InfinityCard card={props.card} onClick={props.onClick} selectedClass={selectedClass} />;
   } else if (props.card.value === 'coffee') {
     return <CoffeeCard card={props.card} onClick={props.onClick} selectedClass={selectedClass} />;
